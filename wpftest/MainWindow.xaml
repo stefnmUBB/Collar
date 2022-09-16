@@ -1,0 +1,41 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wpftest"
+        xmlns:WPFControls="clr-namespace:Collar.WPFControls;assembly=Collar" xmlns:Forms="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms" x:Class="wpftest.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <WPFControls:ToggleSwitch x:Name="ts1" HorizontalAlignment="Left" Height="36" Margin="98,37,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" CheckStateChanged="ToggleSwitch_CheckStateChanged" BorderBrush="White" BorderThickness="0" BorderLineThickness="0"/>
+        <WPFControls:ToggleSwitch x:Name="ts2" HorizontalAlignment="Left" Height="36" Margin="175,37,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" CornerRadius="0" Checked="True" BorderLineThickness="2" BorderStyle="Black"/>
+        <WPFControls:ToggleSwitch x:Name="ts3" HorizontalAlignment="Left" Height="36" Margin="276,37,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" CornerRadius="50" SliderBackground="White" SliderBackgroundCheckedHover="#FFC4CD0C" SliderBackgroundChecked="#FFE2CE02" SliderBackgroundHover="White" InputBackground="#FFCFA8A8" InputBackgroundChecked="#FFE66464" InputBackgroundCheckedHover="#FFC86464" InputBackgroundHover="#FFA26767" CheckStateChanged="ts3_CheckStateChanged" RightToLeft="True"/>
+        <WPFControls:ToggleSwitch x:Name="ts4" HorizontalAlignment="Left" Height="74" Margin="99,92,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" CornerRadius="20" Checked="True" InputBackgroundChecked="#FF64E664" InputBackgroundCheckedHover="#FF64C864"/>
+        <WPFControls:ToggleSwitch x:Name="ts5" HorizontalAlignment="Left" Height="36" Margin="248,111,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" CornerRadius="60" RightToLeft="True" CheckStateChanged="ts5_CheckStateChanged" Checked="True">
+            <WPFControls:ToggleSwitch.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </WPFControls:ToggleSwitch.RenderTransform>
+        </WPFControls:ToggleSwitch>
+        <WPFControls:ToggleSwitch x:Name="ts6" HorizontalAlignment="Left" Height="36" Margin="296,111,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" CornerRadius="28" Animated="False" CheckStateChanged="ts6_CheckStateChanged">
+            <WPFControls:ToggleSwitch.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </WPFControls:ToggleSwitch.RenderTransform>
+        </WPFControls:ToggleSwitch>
+        <WPFControls:HueColorPicker x:Name="hue" HorizontalAlignment="Left" Height="16" Margin="98,194,0,0" VerticalAlignment="Top" Width="250" CornerRadius="0.5" RenderTransformOrigin="0.5,0.5" CornerRadiusStyle="PercentageMin" GradientDistribution="Adjust" SelectedColorChanged="HueColorPicker_SelectedColorChanged" BorderThickness="0" BorderLineThickness="1" BorderStyle="#FF8B8B8B"/>
+        <WPFControls:LuminosityColorPicker x:Name="lum" HorizontalAlignment="Left" Height="21" Margin="99,215,0,0" VerticalAlignment="Top" Width="249"  SelectedColorChanged="LuminosityColorPicker_SelectedColorChanged_1" CornerRadius="0.5" CornerRadiusStyle="PercentageMin" BorderBrush="Black" BorderStyle="#FF959595" BorderThickness="0" BorderLineThickness="1" InputColorChanged="lum_InputColorChanged"/>
+        <WPFControls:HexagonButton HorizontalAlignment="Left" Height="167" Margin="520,128,0,0" VerticalAlignment="Top" Width="166"/>
+        <Button Content="Button" HorizontalAlignment="Left" Height="30" Margin="252,338,0,0" VerticalAlignment="Top" Width="118" RenderTransformOrigin="-0.127,-0.45" Background="#FFBEDDFB"/>
+
+    </Grid>
+</Window>
