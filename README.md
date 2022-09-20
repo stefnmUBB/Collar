@@ -1,6 +1,6 @@
 # Collar
 
-C# UI showcase library which supports botf Winforms and WPF.
+C# UI showcase library which supports both Winforms and WPF.
 
 I was too bored and yet too crazily curious to make this useless thing.
 
